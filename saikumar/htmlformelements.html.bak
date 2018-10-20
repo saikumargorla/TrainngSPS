@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+ <form>
+ <p style="height:30px;background-color:rgba(30,130,30,0.2)">This is first paragraph with height 30px</p>
+ <p style="height:50px;background-color:rgba(120,30,30,0.2)">This is second paragraph with height 50px</p>
+ text boxes with different width and height<br>
+ <input type="text" style="width:200px;height:30px"><br>
+ <input type="text" style="width:150px;height:40px">
+  </form>
+ </body>
+</html>

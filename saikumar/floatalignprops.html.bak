@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+ <table style="border:2px solid gray;width:600px;height:600px">
+ <tr>
+ <td>
+  <table border=1 width="200" height="200" >
+	  <tr height="50%">
+	  <td align="left">left align
+	  </td>
+	  <td align="center">center align</td>
+	  </tr>
+	  <tr height="50%">
+	  <td align="right">right align
+	  </td>
+	  <td></td>
+	  </tr>
+	 
+  </table>
+  </td>
+  </tr>
+  <tr>
+ <td>
+  <table border=1 width="200" height="200" style="float:right">
+	  <tr height="50%">
+	  <td valign="top">
+	  vertical top
+	  </td>
+	  <td><h3>This table is right floated</h3></td>
+	  </tr>
+	  <tr height="50%">
+	  <td valign="bottom">
+	  vertical bottom
+	  </td>
+	  <td valign="middle">vertical middle</td>
+	  </tr>
+  </table>
+  
+ </td>
+ </tr>
+ <tr>
+ <td>
+  <table border=1 width="200" height="200">
+	  <tr height="50%">
+	  <td>
+	  </td>
+	  <td></td>
+	  </tr>
+	  <tr height="50%">
+	  <td>
+	  </td>
+	  <td></td>
+	  </tr>
+  </table>
+  </td>
+  </tr>
+  </div>
+ </body>
+</html>

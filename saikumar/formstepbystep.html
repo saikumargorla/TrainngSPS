@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="saikumar">
+  <title>Registration Form</title>
+  <style>
+  .namecss{
+  border:1px solid red;
+  border-color:blue;
+  background-color:#F9A5BD;
+  text-align:right;
+  }
+  #btncss{
+  cursor:pointer;
+  }
+  .selectcss{
+  border:1px solid brown;
+  border-color:red;
+  background-color:#bfbfbf;
+  color:;
+  }
+  .signinbtncss{
+  background-color:#00802b;
+  color:white;
+  
+  width:200px;
+  height:30px;
+  }
+  label{
+  width:320px;
+  display:inline-block;
+  }
+  </style>
+ </head>
+ 
+ <body style="font-family:arial;">
+  <label style="padding-left:750px;font-weight:bold;font-size:20px">Registration Form</label><br><br>
+  <form name="regform" id="reg_form" style="border:0px solid black;width:;height:100%;padding-left:500px" >
+  <label>Enter your name</label>
+  <input type="text" id="" name="" size="35" maxlength="20" class="namecss"><br><br>
+  <label>Enter your Father name</label>
+  <input type="text" id="" name=""  size="30" maxlength="15"><br><br>
+  <label>Enter your current address</label>
+  <input type="text" id="" name="" style="height:40px;width:150px" autofocus><br><br>
+  <label>Enter your Permanent address</label>
+  <input type="text" id="" name="" style="height:50px;width:200px"><br><br>
+  <label>Enter Your state</label>
+  <input type="text" value="hyderabad" readonly><br><br>
+  <label>known languages</label>
+  <label><input type="checkbox" id="English" name="language" style="color:red"><span  style="color:red;">English</span></label>
+  <label style="margin-left:-200px"><input type="checkbox" id="Hindi" name="language" > <span  style="color:purple;">Hindi</span></label>
+  <label style="margin-left:-200px"><input type="checkbox" id="Telugu" name="language" disabled><span style="color:green">Telugu</span></label><br><br>
+  <label>Select your branch</label>
+  <label><input type="radio" id="cse" name="branch">CSE</label>
+  <label style="margin-left:-200px"><input type="radio" id="it" name="branch">IT</label>
+  <label style="margin-left:-200px"><input type="radio" id="ece" name="branch">ECE</label><br><br>
+  <label>Select your favourite sport</label>
+  <select name="sports">
+	  <option>Cricket</option>
+	  <option>Football</option>
+	  <option>Hockey</option>
+  </select><br><br>
+  <label>Select your favourite color</label>
+  <select name="colors" style="height:40px;width:100px;" >
+	  <option value="">--select city--</option>
+	  <option>White</option>
+	  <option>Green</option>
+	  <option>Black</option>
+  </select><br><br>
+  <label>Select your favourite city</label>
+  <select name="city" class="selectcss">
+	  <option >Hyderabad</option>
+	  <option selected>Bangalore</option>
+  </select><br><br>
+  <label>Write about your best moments</label>
+  <textarea rows="5" cols="60" style="vertical-align:top" ></textarea><br><br>
+  <label>Write about your idle person</label>
+  <textarea rows="10" cols="50" placeholder="your inspiration" style="vertical-align:top" class="selectcss"></textarea>
+  <br><br>
+  <input type="reset" style="width:100px;height:40px;margin-right:222px" id="btncss" disabled>
+  <input type="submit" id="btncss" style="width:180px;height:40px">
+  <input type="button" value="Sign In" style="width:190px;height:40px;font-size:20" id="btncss" class="signinbtncss">
+  </form>
+ </body>
+</html>

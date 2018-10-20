@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body  style="font-family:arial;margin-left:200px"onload="load()">
+ <h2>Mouse events and Click events</h2>
+ <input type="button" value="mouseevents" onClick="logevent(event)"  
+        onmousedown="logevent(event)" onmouseup="logevent(event)" 
+		onmouseout="logevent(event)" ondblclick="logevent(event)">
+ <input type="button" value="clear" onClick="cleartext()"><br><br>
+ <textarea id="txtarea" rows="15" cols="20"></textarea><br>
+  
+ <h2>Input events</h2>
+ <input type="text" id="" name="" onfocus="logevent2(event)" onkeydown="logevent2(event)" onkeyup="logevent2(event)" onkeypress="logevent2(event)" >
+ <input type="text" id="uname" onblur="myfunction()"><br><br>
+ <textarea id="txtarea1" rows="15" cols="20"></textarea><br>
+  <script type="text/javascript">
+  function logevent(event){
+	//event=event ;  
+        document.getElementById("txtarea").value+=event.type + "\n";
+    }
+  function cleartext(){
+        document.getElementById("txtarea").value="";
+		document.getElementById("txtarea1").value="";
+    }
+
+	function logevent2(event){
+	//event=event ;  
+        document.getElementById("txtarea1").value+=event.type + "\n";
+    }
+  
+  function load(){
+  alert("page is loaded")
+  }
+
+  function myfunction(){
+  //var gettext=document.getElementById("uname");
+  //gettext.value=gettext.value.toUpperCase();
+
+  var x = document.getElementById("uname");
+  x.style.backgroundColor="#f9f598"
+  // x.value = x.value.toUpperCase();
+  x.value = x.value.style.color("red");
+
+  }
+  </script>
+ </body>
+</html>

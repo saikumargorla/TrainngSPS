@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <style>
+  div{
+  border:1px solid black;
+  height:100px;
+  width:300px;
+  display:block;
+  }
+  .sec{
+  display:inline;
+  font-size:20px;
+  }
+
+  </style>
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+ <h1 style="visibility:visible">This is using visibility visible property</h1>
+ <h2 style="background-color:rgba(0,0,0,0.4)" ><span style="visibility:hidden">This is now visible</h2>
+ 
+  <div><p>This is using the inline of display property</p></div>
+  <div >this is using inline property<p class="sec">This is using the inline of display property</p></div>
+  <div><p>This is using the inline of display property</p></div>
+
+
+ 
+ </body>
+</html>

@@ -1,0 +1,77 @@
+chapter1
+11:30 am
+ 
+
+chapter 2,chapter3
+textbox, checkbox, radio,button
+12 pm
+ 
+
+chapter 4
+12:15 pm
+first two with size attributes,
+second two with height and width property.
+ 
+autofocus
+ 
+textbox 
+border,borderclor,backgroundcolor
+ 
+12:30
+text align for textbox1
+ 
+
+cursor pointer
+ 
+different  select tag
+first with normal
+second with height and width
+third with default select option
+ 
+
+
+select with border,bcolor,borcolor
+ 
+
+
+textarea with different heights and width
+12:50
+ 
+
+textarea with bgcol,bord,bordcol
+1 pm
+ 
+
+1:10
+submit reset buttons
+ 
+
+btn with bgcol,bor,
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+ Enter your phone number &nbsp:&nbsp; 
+ <input type="text" id="uname" name="username" style="border:1px solid gray;"><br><br>
+ <input type="button" value="validation" onclick="checknum()">
+  <script>
+   function checknum(){
+   var x=document.getElementById("uname").value;
+  // var num=x.value
+   if(x==''){
+    document.getElementById("uname").style.borderColor ="red";
+   }
+   var phno=/^[0-9]+$/;
+   if(phno.test(x)==false || x.length>10 || x.length<10){
+	   if(phno.test(x)==false){
+	   alert("The field should consists only numbers");
+	   document.getElementById("uname").value="";
+	   document.getElementById("uname").focus();
+	   
+	   }
+
+	   else if(x.length>10){
+		   alert("you have entered"+x.length +" numbers");
+      document.getElementById("uname").style.borderColor ="red";
+	     document.getElementById("uname").focus();
+		
+	   }
+	   else if(x.length<10){
+	      alert("you have entered "+x.length+" digits."+" It should contain 10 digits");
+		  document.getElementById("uname").style.borderColor ="red";
+          document.getElementById("uname").focus();
+	   }
+   }
+   
+   }
+  </script>
+ </body>
+</html>

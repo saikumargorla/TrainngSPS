@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial;margin-left:200px">
+  <script type="text/javascript">
+  var computer=new Object();//1 way of declaring objects 
+  computer.comp_name="DELL";
+  computer.locat="hyderabad"
+  computer.storage="1 TB";
+  computer.size= "65 cm";
+  computer.price=50000;
+  computer.comploc=function() {
+            return this.comp_name+" "+this.locat
+  }
+  document.write("name of computer : "+computer.comp_name +" <br>"+"storage of computer : "+computer.storage+"<br> "+"size of computer : "+computer.size+"<br>"+"price : "+computer.price +"<br>" +computer.comploc()+"<br><br>");
+  document.write("student details" + "<br>");
+  var student={name:"saikumar",age:21,address:"adilabad"};//2nd way of declaring objects
+  document.write(student.name+"<br>"+student.age+"<br>"+student.address);
+  </script>
+ </body>
+</html>

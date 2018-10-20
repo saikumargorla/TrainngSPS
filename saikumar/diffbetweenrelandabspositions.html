@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+<style>
+.parent {
+  display: inline-block;
+  width: 180px;
+  height: 160px;
+  border: 1px solid black;
+}
+
+.black {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.red {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  top: 16px;
+  background: red;
+  border: 1px solid red;
+}
+
+.red-1 {
+  position: relative;
+}
+
+.red-2 {
+  position: absolute;
+}
+</style>
+  <title>Document</title>
+ </head>
+ <body>
+  <div class="parent">
+  <div class="black">
+  </div>
+  <div class="red red-1">
+  </div>
+</div>
+
+<div class="parent">
+  <div class="black">
+  </div>
+  <div class="red red-2">
+  </div>
+</div>
+ </body>
+</html>

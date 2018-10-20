@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial;font-size:20px">
+  <p id="p1" ></p>
+  <input type="button"  value=getname onClick='disname();this.style.visibility="hidden";';>
+  <input type="button" id="btn" value="getcolor" style="visibility:hidden" onClick="getcolor()">
+  <script type="text/javascript">
+  var name="saikumar"
+  function disname(){
+    document.getElementById("p1").innerHTML=name; 
+	document.getElementById("btn").style.visibility="visible"
+  }
+  function getcolor(){
+   var color=name.fontcolor("blue");
+   document.getElementById("p1").innerHTML=color;
+  }
+  </script>
+ </body>
+</html>

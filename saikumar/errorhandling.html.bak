@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+ <p id="p1"></p>
+  <script>
+   /*
+  try{
+     document.getElementByID("p1").innerHTML="hello";
+  }
+   catch(error){
+      alert(error)
+   }
+ */try{
+   //var i=11
+   for(i=1;i<20;i++){
+   
+   if(i>10) throw "exceeding limit"
+   document.write(i + "<br>");
+   
+   }
+ }
+   catch(error){
+   alert(error);
+   }
+  finally{
+  document.write("Finally block will always executes");
+  } 
+   
+  </script>
+ </body>
+</html>

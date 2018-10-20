@@ -1,0 +1,8 @@
+div:hover,button:hover{
+background-color:#e6e6e6;;
+}
+
+div{
+border:1px solid black;
+width:40%;
+}

@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<style>
+label{
+display:inline-block;
+width:140;
+padding-left:5px;
+padding-bottom:15px;
+}
+</style>
+
+</head>
+
+<form style="margin-left:250;margin-right:300;
+      margin-top:50;background-color:#bfbfbf;
+      padding-left:20px;padding-bottom:10px;
+	  padding-top:10px;border-radius:10px;
+	  font-family:arial;font-size:12">
+<b><u>The Complete Registration form 
+      with Javascript validation:</u></b><br><br>
+<label>Enter Your Name</label>
+:<input type="text"><br>
+
+<label>Enter Your Mail-ID</label>
+:<input type="text"><br>
+
+<label>Choose Your Gender </label>
+:<input type="radio" name="gender" value="male" >Male
+<input type="radio" name="gender" value="female">Female<br>
+
+<label>Create Your Password</label>
+:<input type="text"><br>
+
+<label>Mobile No.</label>
+:<input type="text"><br>
+
+<label>Choose Your Date</label>
+:<input type="date" placeholder="mm/dd/yyyy"><br><br>
+
+<label>Enter Your Address</label>
+:<textarea style="vertical-align:bottum;height:50;">
+</textarea><br><br>
+
+<label>Choose Your Location</label>
+:<select>
+<option>Hyderabad</option>
+<option>Delhi</option>
+</select><br>
+
+<button type="clear" style="height:30;width:50">
+        Clear</button>
+		&emsp;&emsp;&emsp;&emsp;
+		&emsp;&emsp;&emsp;&emsp;
+<button type="submit"  style="width:180;height:30">
+       Submit</button>
+
+</form>
+
+</html>

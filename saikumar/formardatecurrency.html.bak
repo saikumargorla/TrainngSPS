@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial;margin-left:200px">
+  <script>
+  
+	//var d=new Date()
+ //   var month=["jan","Feb","Mar","Apr","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  // document.write(month[d.getMonth()-1] );
+
+  function formatdate(date) {
+  var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
+
+  var day = date.getDate();
+  var month = date.getMonth();
+  var year = date.getFullYear();
+
+  return day + " " + monthNames[month] + " " + year;
+}
+
+document.write(formatdate(new Date("01/26/1996"))+"<br><br>"); 
+
+
+function currency(number){
+   var indiancu=number+".00"
+   var uscur="$"+number+".00"
+return "Indian currency " + indiancu + "<br><br>" + "US currency " +uscur
+}
+ document.write(currency(4))
+  </script>
+ </body>
+</html>

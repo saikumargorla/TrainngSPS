@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial;font-size:20px;margin-left:200px">
+ <h3>Array methods</h3>
+ <label style="">Initial array is &nbsp;:&nbsp;
+ <label id="l1"></label></label><br><br>
+
+ <label style="">After pushing an element the array is&nbsp;:&nbsp;
+ <label id="l2"></label></label><br><br>
+
+ After poping an element the array is&nbsp;:&nbsp;
+ <label id="l3"></label><br><br>
+
+ After shifting an element the array is&nbsp;:&nbsp;
+ <label id="l4"></label><br><br>
+
+ After unshifting an element the array is&nbsp;:&nbsp;
+ <label id="l5"></label><br><br>
+
+ By sorting in ascending order the array is&nbsp;:&nbsp;
+ <label id="l6"></label><br><br>
+
+ By sorting in descending order the array is&nbsp;:&nbsp;
+ <label id="l7"></label><br><br>
+
+ 
+  <script>
+  var arr=["monitor","mouse","keyboard","logic unit","CPU"];
+  document.getElementById("l1").innerHTML=arr +"<br>";
+  arr.push("Memory Unit");
+  document.getElementById("l2").innerHTML=arr + "<br>";
+  arr.pop();
+  document.getElementById("l3").innerHTML=arr + "<br>";
+  arr.shift();
+  document.getElementById("l4").innerHTML=arr + "<br>";
+
+  arr.unshift("Hard drive");
+  document.getElementById("l5").innerHTML=arr + "<br>";
+
+  arr.sort();
+  document.getElementById("l6").innerHTML=arr + "<br>";
+
+  arr.reverse();
+  document.getElementById("l7").innerHTML=arr + "<br>";
+ // document.write("<br>");
+ 
+  </script>
+ </body>
+</html>

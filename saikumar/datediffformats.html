@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+ <script>
+
+ //object inside array
+
+ var book = [
+  {name:'foreword', pageCount: 14},
+  {name:'boyWhoLived', pageCount: 18},
+  {name:'vanishingGlass', pageCount: 13}, 
+]; 
+document.write(book + "<br>")
+document.write(book[1] + "<br>")
+document.write(book[1]['name']);
+// {name:'lettersFromNoOne', pageCount: 17},
+ // {name:'afterword', pageCount: 19}
+/*
+//var student=["sai",30];
+//var Student={"name":"saikkuam","rolll":45}
+
+   var students = [ 
+    { 
+      "Name" : "saikumar", 
+      "branch" : "IT"      
+    }, 
+    { 
+      "Name" : "anvesh",
+      "branch" : "cse" 
+    }, 
+    { 
+      "Name" : "venkatesh", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "vinay", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "ashish", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "sravan", 
+      "branch" : "IT"
+    },
+    { 
+      "Name" : "akhil", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "nihal", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "soujanya", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "sandeep", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "chaithanya", 
+      "branch" : "IT" 
+    }, 
+    { 
+      "Name" : "ganesh", 
+      "branch" : "IT"
+    }, 
+    { 
+      "Name" : "likhitha", 
+      "branch" : "IT"
+    },     
+    { 
+      "Name" : "anurag", 
+      "branch" : "IT" 
+    } 
+  ] 
+//  document.write(Student)
+//document.write("student name " +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ "Branch" +"<br>")
+//for(var i=0;i<students.length;i++){
+//document.write(students[i]['Name']+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + students[i]['branch']+"<br>");
+document.write(students+"<br>");
+document.write(students[1]+"<br>");
+document.write(students[1]['Name']);
+//}
+
+
+
+//array inside array
+var student=[
+
+["sai","IT"],
+["Nihal","ECM"],
+["Anurag","CSE"]
+
+]
+document.write(student + "<br>");
+document.write(student[1] + "<br>");
+document.write(student[1][0]);
+
+
+//array inside object
+var Student={
+student1:["sai","IT"],
+student2:["Nihal","ECM"],
+student3:["Anurag","CSE"]
+}
+
+document.write(student + "<br>");
+document.write(student.student1+"<br>");
+document.write(student.student1[1]);
+
+//object inside object
+
+var student={
+ name1: {name:'foreword', pageCount: 14},
+ name2: {name:'boyWhoLived', pageCount: 18},
+ name3: {name:'vanishingGlass', pageCount: 13}
+}
+document.write(student + "<br>");
+document.write(student.name3 + "<br>");
+document.write(student.name3.name);
+
+*/
+document.write(student + "<br>");
+document.write(student.student1+"<br>");
+document.write(student.student1[1]);
+
+
+</script>
+ </body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+ <form>
+ <label>Enter your name</label><br><br>
+ <input type="text" id="U_name" name="Uname" style="height:20px;font-size:20px">
+ <input type="submit" onClick="displname();">
+  <script>
+  function displname(){
+  var personname=document.getElementById("U_name").value;
+  document.write("My name is " + personname)
+  }
+  </script>
+  </form>
+ </body>
+</html>

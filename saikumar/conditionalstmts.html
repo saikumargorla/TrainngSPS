@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial;font-size:20px;margin-left:200px">
+ <form>
+ <h3>using if statement</h3>
+ variable firstname is "saikumar"<br><br>
+ <input type=button value="CompareUsingIf" onclick="myFunction()"><br><br>
+ comparing "firstname" with "vinay"
+  <p id="p1"></p>
+ comparing "firstname" with "saikumar"
+ <p id="p2"></p>
+ comparing "firstname" with "gorla"
+ <p id="p3"></p>
+ <h3>using if-else statement</h3>
+ <input type=button value="CompareUsingIfElse" onclick="ifelsefucn()"><br><br>
+ here comparing "firstname" with "saikumar"
+ <p id="p4"></p>
+
+ <h3>using if-else if statement</h3>
+
+ <input type=button value="CompareUsingIfElif" onclick="ifelif()"><br><br>
+  giving 3 as variable.both are equal then it prints equal.<br>
+ if the variable greater than 3 it prints "var greater than 3"<br>
+ if the variable less than 3 it prints "var less than 3"
+ <p id="p5"></p>
+
+  <script type="text/javascript">
+  var firstname="saikumar"
+  function myFunction(){
+	  if(firstname="vinay"){
+	  document.getElementById("p1").innerHTML="false"+"<br><br>"
+	  }
+	  if(firstname="saikumar"){
+	   document.getElementById("p2").innerHTML="true" + "<br><br>"
+	  }
+	  if(firstname="gorla"){
+	  document.getElementById("p3").innerHTML="false"
+	  }
+  }
+  function ifelsefucn(){
+	  if (firstname="saikumar")
+	  {
+		  document.getElementById("p4").innerHTML="true";
+	  }
+	  else{
+		 document.getElementById("p4").innerHTML="false";
+	  }
+  }
+  function ifelif(){
+	  var a=3;
+	  if(a<3){
+	  document.getElementById("p5").innerHTML="variable is lessthan three"
+	  }
+	  else if(a>3){
+	  document.getElementById("p5").innerHTML="variable is greaterthan three";
+	  }
+	  else{
+	  document.getElementById("p5").innerHTML="variable is equals to 3"
+	  }
+  }
+  
+  </script>
+  </form>
+ </body>
+</html>

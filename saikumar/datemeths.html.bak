@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body style="font-family:arial">
+  <script>
+  var date=new Date();
+  var isodate=new Date("2018-10-17");
+  var shortdate=new Date("10/17/2018");
+  var longdate=new Date("25 mar 2018");
+  document.write("isodate "+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+isodate + "<br>")
+  document.write("shortdate"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+shortdate + "<br>")
+  document.write("longdate"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+longdate + "<br>")
+  document.write("getFullYear"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+date.getFullYear() + "<br>");
+  document.write("getMonth"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+date.getMonth()+ "<br>");
+  document.write("getDay"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+date.getDay()+ "<br>");
+  </script>
+ </body>
+</html>
