@@ -1,0 +1,97 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+ <head>
+ <style>
+ table{
+ border:1px solid red;
+ width:500px;
+ height:500px;
+ border-collapse:collapse;
+  background-color:green;
+ }
+ td{
+ border:1px solid black;
+ width:10px;
+ text-align:center;
+ }
+ td:nth-child(1),tr:nth-child(1){
+ font-weight:bold;
+ }
+ td:nth-child(even),tr:nth-child(even){
+ background-color:red;
+ }
+ </style>
+  <meta name="Author" content="">
+  <title>Document</title>
+ </head>
+ <body style="margin-left:200px;font-family:arial">
+  <h2>Multiplication table with rows and colums</h2>
+ 
+  <script>
+  var num1=prompt("enter number of rows");
+  var num2=prompt("enter number of columns");
+ 
+ var result="<table border=1>" 
+  for(var i=1;i<=num1;i++){
+	  result=result+"<tr>"
+     for (j=1;j<=num2;j++)
+     {
+		 var checkprimeNumber;
+		checkprimeNumber = checkprime(i*j);
+		console.log(i*j +'-'+checkprimeNumber)
+		if(checkprimeNumber=='mul'){
+		  result=result+"<td style='background-color:white'>" + i*j + "</td>"
+		}
+
+		else if((i*j)%5==0){
+		  result=result+"<td style='background-color:yellow'>" + i*j + "</td>"
+		}
+       
+		else{
+		result=result+"<td>" + i*j + "</td>"	
+        }
+		
+     } 
+	result=result+"</tr>"
+  }
+  result=result+"</table>"
+  document.write(result);
+
+	function checkprime(result1){
+				var count=0;
+			//var num=prompt("entre a number")
+
+		 
+			for(var i=1;i<=result1;i++){
+			   
+			   if(result1%i==0){
+			   count++;
+			   
+			   }
+
+			}
+			   if(count==2){
+				   return 'mul';
+			  //console.log(result + "prime")  
+			   }
+			  
+			   else{
+				   return false;
+			   //console.log(result +"not prime")
+			   }
+            
+			}
+
+	
+ 
+  </script>
+ </body>
+</html>
+
+
+
+
+
+
+

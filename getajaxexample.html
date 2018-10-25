@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <p id="myDiv"></p>
+  <script type="text/javascript">
+var ajax = new XMLHttpRequest();
+
+// Seta tipo de requisição e URL com os parâmetros
+ajax.open("GET", "test.txt", true);
+
+// Envia a requisição
+ajax.send();
+
+// Cria um evento para receber o retorno.
+ajax.onreadystatechange = function() {
+  
+  // Caso o state seja 4 e o http.status for 200, é porque a requisiçõe deu certo.
+	if (ajax.readyState == 4 && ajax.status == 200) {
+    
+		var data = ajax.responseText;
+		
+    // Retorno do Ajax
+		console.log(data);
+	}
+}</script>
+ </body>
+</html>
