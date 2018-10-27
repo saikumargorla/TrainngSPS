@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <style>
+  table{
+  border:1px solid black;
+  width:500px;
+  height:500px;
+  text-align:center
+  }
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+ var tablerow=0,tdtext=0;
+ var result="<table border=1>"
+var date = new Date();
+  var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+  var day=firstDay.getDay();
+  console.log(day);
+
+start:for(var i=1;i<=5;i++){	 
+ result=result+"<tr>"
+
+ if(day==1){
+    result=result+"<td></td>"
+	day++;
+	tablerow=tablerow+1
+ }
+
+ for(var j=1;j<=7;j++)
+ { 
+	 tablerow = tablerow+ 1 
+	 tdtext = tdtext+1
+ result=result+"<td>" + tdtext + "</td>" 
+   if(tablerow==7){
+   result=result+"</tr>"
+   continue start;
+   }
+ 
+ }
+ //console.log(j)
+ result=result+"</tr>"
+ }
+ 
+ result=result+"</table>"
+
+ 
+  document.write(result)
+  
+/*
+var result="<table border=1><tr>"
+
+result= result + "<th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>" + "</tr><tr>"
+  for (var i=1;i<=31 ;i++ )
+  {
+	  (i%7)==0 ? result= result+"<td>"+i+"</td></tr>":result=result+"<td>"+i+"</td>"
+  }
+  result=result+"</table>"
+  document.write(result)*/
+  /*
+  var date = new Date();
+  var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+  var day=firstDay.getDay();
+  console.log(day);
+ 
+  if(day==1){
+  // "table tr:nth-child(1) td:nth-child(1):empty"
+   var table= document.querySelector("table")
+  var firstchild=table.querySelector("tr td:nth-child(1)");
+  firstchild.value = ""
+
+  }
+  */
+ </script>
+ </body>
+</html>

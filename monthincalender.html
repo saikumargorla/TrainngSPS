@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <style>
+  table{
+  border:1px solid black;
+  width:500px;
+  height:500px;
+  text-align:center
+  }
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+ 
+ <script>
+ var selbox="<select id='nameSelect'>"
+ for(var d=1;d<=12;d++)
+{
+    selbox=selbox +"<option>"+d+"</option>";
+}
+var selbox=selbox+"</select>"
+document.write(selbox);
+//var index=document.getElementById("nameSelect").value;
+var e = document.getElementById("nameSelect");
+var strUser = e.options[e.selectedIndex].value;
+console.log(strUser)
+ // console.log(index)
+ var tablerow=0,tdtext=0;
+ var result="<table border=1>"
+var date = new Date();
+  var firstDay = new Date(date.getFullYear(), 12, 1);
+  var day=firstDay.getDay();
+  console.log(day);
+ 
+start:for(var i=1;i<=5;i++){	 
+ result=result+"<tr>"
+
+ switch(day){
+	 case 1:
+    result=result+"<td></td>"
+	day=day+8;
+	tablerow=tablerow+1;
+	break;
+	case 2:
+    result=result+"<td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+2;
+	break;
+	case 3:
+    result=result+"<td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+3;
+	break;
+	case 4:
+    result=result+"<td></td><td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+4;
+	break;
+	case 5:
+	 result=result+"<td></td><td></td><td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+5;
+	break;
+	case 6:
+	 result=result+"<td></td><td></td><td></td><td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+6;
+	break;
+
+ }
+
+ for(var j=1;j<=7;j++)
+ { 
+	 tablerow = tablerow+ 1 
+	 tdtext = tdtext+1
+ result=result+"<td>" + tdtext + "</td>" 
+   if(tablerow==7){
+   result=result+"</tr>"
+   continue start;
+   }
+  
+ }
+ //console.log(j)
+ result=result+"</tr>"
+  if(tdtext>31){
+    //tdtext.style.value='none'
+   }
+ }
+ 
+ result=result+"</table>"
+
+ 
+  document.write(result)
+  
+
+ </script>
+ </body>
+</html>

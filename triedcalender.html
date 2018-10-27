@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta name="Author" content="">
+  <style>
+  table{
+  border-collapse:collapse;
+  border:1px solid black;
+  width:500px;
+  height:500px;
+  text-align:center
+  }
+  td{
+  border:1px solid black
+  }
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+ <select id="nameSelect" onchange="getmonth()">
+ <option value=1>Jan</option>
+ <option value=2>Feb</option>
+ <option value=3>Mar</option>
+ <option value=4>Apr</option>
+ <option value=5>May</option>
+ <option value=6>Jun</option>
+ <option value=7>Jul</option>
+ <option value=8>Aug</option>
+ <option value=9>Sep</option>
+ <option value=10>Oct</option>
+ <option value=11>Nov</option>
+ <option value=12>Dec</option>
+
+ </select>
+
+ <p id="p1"></p>
+ <script>
+ /*
+ var selbox="<select id='nameSelect'>"
+ for(var d=1;d<=12;d++)
+{
+    selbox=selbox +"<option>"+d+"</option>";
+}
+var selbox=selbox+"</select>"
+document.write(selbox);
+*/
+//var index=document.getElementById("nameSelect").value;
+
+function getmonth(){
+var e = document.getElementById("nameSelect");
+var month = e.options[e.selectedIndex].value-0;
+console.log(month)
+ // console.log(index)
+ var tablerow=0,tdtext=0;
+ var result="<table border=1><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>"
+var date = new Date();
+//var today = new Date(date.getFullYear(),date.getMonth,date.getDay());
+console.log(date.getFullYear()+","+date.getMonth()+","+date.getDay() );
+  var firstDay = new Date(date.getFullYear(), month, 1);
+console.log(firstDay.getFullYear() + "," +firstDay.getMonth() )
+  var day=firstDay.getDay();
+  console.log(day);
+var daysinmonth=daysInMonth(firstDay.getMonth(),firstDay.getFullYear())
+console.log(daysinmonth)
+start:for(var i=1;i<=6;i++){	 
+ result=result+"<tr>"
+
+ switch(day){
+	 case 1:
+    result=result+"<td></td>"
+	day=day+8;
+	tablerow=tablerow+1;
+	break;
+	case 2:
+    result=result+"<td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+2;
+	break;
+	case 3:
+    result=result+"<td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+3;
+	break;
+	case 4:
+    result=result+"<td></td><td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+4;
+	break;
+	case 5:
+	 result=result+"<td></td><td></td><td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+5;
+	break;
+	case 6:
+	 result=result+"<td></td><td></td><td></td><td></td><td></td><td></td>"
+	day=day+8;
+	tablerow=tablerow+6;
+	break;
+
+ }
+
+ for(var j=1;j<=7;j++)
+ { 
+	 tablerow = tablerow+ 1 
+	 tdtext = tdtext+1
+      
+	if(tdtext>daysinmonth){ result=result+"<td style='visibility:hidden'></td>"}
+	else{  
+		   
+		   result=result+"<td>" + tdtext + "</td>" 
+		   if(tablerow==7){
+		   result=result+"</tr>"
+		   continue start;
+                          }
+        }
+ }
+ //console.log(j)
+ result=result+"</tr>"
+ 
+ }
+ 
+ result=result+"</table>"
+
+ 
+  document.getElementById("p1").innerHTML=result
+  
+  
+}
+
+
+function daysInMonth(month,year) {
+return new Date(year, month, 0).getDate();
+}
+
+/*
+function daysInMonth(iMonth, iYear) {
+   return(32 - new Date(iYear, iMonth+1, 32).getDate());
+	
+//console.log(a)
+}*/
+/*
+ if(tdtext>31){
+var table= document.querySelector("table")
+  var firstchild=table.querySelector("tr td")
+  firstchild.style.color="red"
+}
+
+ if(firstDay.getFullYear()==date.getFullYear() && tdtext==date.getDay() && firstDay.getMonth()==date.getMonth()){
+	 result = result + "<td style='background-color:yellow'>"+tdtext +"</td>"
+	 }
+
+	 */
+
+ </script>
+ </body>
+</html>
+
