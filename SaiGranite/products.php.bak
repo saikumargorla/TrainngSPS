@@ -1,0 +1,35 @@
+
+<frameset rows="10%,*">
+<frame src="productsheader.php">
+<frame src="productform.php" name="frame5">
+
+</frameset>
+
+
+<!--
+<html>
+<style>
+td{
+border:1px solid red;
+}
+</style>
+<body style="font-family:arial">
+<table border=1 height="100%" width="100%">
+	<tr>
+		<td>
+			<table border=1 height="5%" width="100%">
+			<tr>
+				<th>Add Product</th>
+				<th>View Product</th>
+			</tr>
+			</table>
+
+			<table border=1 height="95%" width="100%">
+			<tr><td></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+-->

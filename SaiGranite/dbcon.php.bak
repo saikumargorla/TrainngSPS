@@ -1,0 +1,20 @@
+<?php
+$serverName = "DESKTOP-P6C3DL5\SQLEXPRESS"; //serverName\instanceName
+//$database = "erd2";
+// Since UID and PWD are not specified in the $connectionInfo array,
+// The connection will be attempted using Windows Authentication.
+$connectionInfo = array( "Database" => "ERD","UID" =>"sps", "PWD" =>"sps");
+$conn = sqlsrv_connect( $serverName, $connectionInfo);
+
+//$conn = new PDO( "sqlsrv:server=$serverName;Database = $database", NULL, NULL);
+
+
+if( !$conn ) {
+	  echo "Connection could not be established.<br />";
+     die( print_r( sqlsrv_errors(), true));
+    
+}
+    echo "Connection established.<br />";
+
+//echo $row[1];
+?>

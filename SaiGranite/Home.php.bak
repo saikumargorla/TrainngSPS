@@ -1,0 +1,7 @@
+<frameset rows="5%,*">
+<frame src="mainheader.php" name="" noresize>
+<frameset cols="20%,*">
+<frame src="masterlist.php" noresize>
+<frame src="" name="frame3" noresize>
+</frameset>
+</frameset>

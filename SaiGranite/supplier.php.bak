@@ -1,0 +1,5 @@
+<frameset cols="10%,*">
+<frame src="supplierheader.php">
+<frame src="supplierform.php" name="frame5">
+
+</frameset>

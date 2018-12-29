@@ -1,0 +1,6 @@
+<html>
+<body style="font-family:arial;backround-image:url(background.jpg)">
+<?php include 'top.php'; ?>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+td{
+width:175px;
+height:25px;
+text-align:center;
+}
+</style>
+</head>
+<body style="font-family:arial;overflow:hidden">
+<table border=0 height="5%" width="">
+<tr>
+<td style="padding-left:30"><a href="supplier.php" target="frame3">Suppliers</a></td>
+<td><a href="">Customers</a></td>
+<td><a href="products.php" target="frame3">Products</a></td>
+<td><a href="">Vendors</a></td>
+</tr>
+</table>
+</body>
+</html>

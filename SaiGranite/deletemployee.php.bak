@@ -1,0 +1,36 @@
+<?php 
+ $serverName = "DESKTOP-P6C3DL5\SQLEXPRESS"; //serverName\instanceName
+$connectionInfo = array( "Database" => "purchasedb","UID" =>"sps", "PWD"=>"sps");
+$conn = sqlsrv_connect( $serverName, $connectionInfo);
+$id=$_GET['id'];
+
+
+//echo $Zip;
+//if( $Website === false ) {
+ //   die( print_r( sqlsrv_errors(), true));
+//}
+
+if( $conn === false ) {
+    die( print_r( sqlsrv_errors(), true));
+}
+// echo "You have registered successfully".$id; 
+
+ $sql = "delete from party where ID=$id";
+$stmt = sqlsrv_query( $conn, $sql);
+if(type=='employee'){
+header("Location: listemployee.php");
+
+}
+else{
+ header("Location: listemployee.php");
+}
+ //$sql1="select IDENT_CURRENT('dbo.Party')";
+ //$stmt1=sqlsrv_query($conn,$sql);
+ 
+
+// sqlsrv_next_result($stmt); 
+//sqlsrv_fetch($stmt); 
+//$id=sqlsrv_get_field($stmt, 0);
+
+//header("Location: vsupplier.php?id=".$id);
+?>
