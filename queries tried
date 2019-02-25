@@ -1,0 +1,25 @@
+SELECT  ErrorLogMessage,  Count(ErrorID) As Count FROM  R_ViewErrorLog  WHERE 
+ErrorLogMessage like '%deadlocked%'  Group by ErrorLogMessage Order by Count(ErrorID) desc
+
+SELECT ErrorID As ErrorID, UserName, ErrorLogTime, ErrorLogUrl, ErrorLogMessage, UserID, ErrorDate FROM R_ViewErrorLog WHERE 
+ErrorLogMessage like '%deadlocked%' Order by ErrorLogTime desc
+
+
+select ErrorLogMessage,(select count(ErrorLogMessage) from R_ViewErrorLog where ErrorLogMessage like '%deadlocked%' ) from R_ViewErrorLog
+
+
+SELECT  ErrorLogMessage,  Count(ErrorID) As Count FROM  R_ViewErrorLog  WHERE 
+ErrorLogMessage like '%deadlocked%'  Group by ErrorLogMessage Order by Count(ErrorID) desc
+
+
+select replace('select ErrorLogMessage from R_ViewErrorLog','select ErrorLogMessage from R_ViewErrorLog where ErrorLogMessage like '%deadlocked%'','deadlock')
+
+
+select u.Name As ErrorLogMessage,count(Name) As Count from (select ErrorDate, case when ErrorLogMessage like '%deadlocked%' then 'deadlocked' else ErrorLogMessage end Name
+from R_ViewErrorLog) u  group by u.Name Order by Count(Name) desc
+
+
+SELECT ErrorLogMessage, Count(ErrorID) As Count FROM R_ViewErrorLog WHERE ErrorDate = '2019-02-18' and 
+ErrorLogMessage not like '% does not exist.%' Group by ErrorLogMessage Order by Count(ErrorID) desc
+
+select * from R_ViewErrorLog
